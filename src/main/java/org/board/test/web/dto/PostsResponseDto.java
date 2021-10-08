@@ -1,9 +1,11 @@
 package org.board.test.web.dto;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import org.board.test.domain.posts.Posts;
 
 @Getter
+@AllArgsConstructor //QueryDsl 에서 쓰기 위해 생성 했음
 public class PostsResponseDto {
     private Long id;
     private String title;
